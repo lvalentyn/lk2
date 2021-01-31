@@ -1812,7 +1812,29 @@ li {
   .lk-btn {
     font-size: 12px; } }
 
+@media (min-width: 1600px) {
+  .lk-content__wrapper {
+    min-height: 100vh; }
+  .lk-source__inner {
+    -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap; }
+  .lk-support__request-response {
+    right: 10px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%); } }
+
 @media (max-width: 1600px) {
+  .lk-support__request-response {
+    right: 10px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%); }
+  .lk-content__wrapper {
+    min-height: 100vh; }
   .lk-content__chart {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1828,6 +1850,14 @@ li {
       padding-left: 0;
       border: none;
       width: 100%; }
+  .lk-source__inner {
+    padding-left: 0; }
+  .lk-source__item {
+    margin-bottom: 20px; }
+    .lk-source__item:nth-child(3) {
+      margin-right: 10px; }
+  .lk-content__filter-btn, .lk-content__filter-btn-reset {
+    margin-bottom: 20px; }
   .lk-banner__list {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
@@ -1836,12 +1866,6 @@ li {
     -webkit-justify-content: start;
         -ms-flex-pack: start;
             justify-content: start; }
-  .lk-source__inner {
-    padding-left: 0; }
-  .lk-source__item {
-    margin-bottom: 20px; }
-    .lk-source__item:nth-child(3) {
-      margin-right: 0; }
   .lk-content__filter {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1876,6 +1900,8 @@ li {
 @media (max-width: 1300px) {
   .lk-content {
     min-width: 67%; }
+  .lk-content__wrapper {
+    min-width: 700px; }
   .page-wrapper {
     overflow: hidden; }
   .lk-source__item {
@@ -1930,7 +1956,8 @@ li {
   .lk-banner__item {
     margin-top: 20px; }
   .lk-content__wrapper {
-    width: 100%; }
+    width: 100%;
+    min-width: auto; }
   .lk-content__filter {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
@@ -2223,7 +2250,9 @@ li {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
-            justify-content: center; } }
+            justify-content: center; }
+  .support__top-social-link {
+    margin: 0 5px; } }
 
 @media (max-width: 444px) {
   .notifications__text {
